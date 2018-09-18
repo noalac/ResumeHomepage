@@ -3,5 +3,13 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /bootstrap
+  static_dir: bootstrap
+
 - url: /.*
   script: index.html
+
