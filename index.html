@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="Welcome to Jingdong Sun's Homepage">
+    <title>Jingdong's Homepage</title>
+    <link rel='stylesheet' href='./css/style.css' type='text/css'>
+    <!--[if lte IE 8]>
+    <link rel='stylesheet' href='./css/style-ie.css' type='text/css'>
+    <![endif]-->
+
+    <link rel="stylesheet" href="./leaflet/leaflet.css"/>
+    <!-- make sure you put this AFTER Leaflet's CSS -->
+    <script src="./leaflet/leaflet.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <body>
+    <div id="top-banner" class="banner">
+      <!-- <img style="position:absolute;left:450px;" src="./img/title-logo.png"> -->
+    </div>
+    <div id="main-body" class="wrapper">
+      <div id="site-title">
+        <div id="name">JINGDONG SUN
+          <div id="subname">Graduate Student in EE</div>
+        </div>
+        <div id="access">
+          <ul id="nav">
+            <li><a id="link-contact" href="#contact" onclick="changeNavState(id)">CONTACT</a></li>
+            <li><a id="link-about" href="#about" onclick="changeNavState(id)">ABOUT</a></li>
+            <li><a id="link-projects" href="#projects" onclick="changeNavState(id)">PROJECTS</a></li>
+            <li><a id="link-research" href="#research" onclick="changeNavState(id)">RESEARCH</a></li>
+            <li><a id="link-home" href="#home" onclick="changeNavState(id)">HOME</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <!-- will be filled by javascript -->
+      </div>
+    </div>
+    <!-- home tab -->
+    <script id="home-content" type="text/x-content">
+      <div id="home-gallery">
+        <div id="gallery-background" class="gallery-content">
+          <span class="gallery-photo" style="opacity:1;filter:Alpha(opacity=100)">
+            <img src="./img/gallery-photo1.jpg">
+          </span>        
+          <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
+            <img src="./img/gallery-photo2.jpg">
+          </span>
+          <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
+            <img src="./img/gallery-photo3.jpg">
+          </span>
+          <!-- two arrows switching photos -->
+          <span id="arrows-left" onclick="window.clearInterval(timer); changePhotoLeft();timer = window.setInterval(changePhotoLeft,4000);">
+            <img src="./img/arrows-left.png">
+          </span>
+          <span id="arrows-right" onclick="window.clearInterval(timer); changePhotoRight();timer = window.setInterval(changePhotoRight,4000);">
+            <img src="./img/arrows-right.png">
+          </span>
+        </div>
+        <div id="gallery-text" class="gallery-content">
+          <h1>Welcome to My Homepage</h1>
+          <div id="gallery-description">
+            <p id="gallery-description-showing">Here is a collection of my work, including the academical research and projects</p>
+            <p id="gallery-description-hidden"></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./img/gallery-bottom.png" style="width:940px;height:40px;margin-bottom:24px;">
+      </div>
+      <div class="container-outside">
+        <div class="container-block">
+	  <h1>Quick Links</h1>
+          <div class="container-description">
+	    <div class="container-desc-col-2">
+	      <p>Jingdong Sun's Latest Resume <a href="./doc/JingdongSun_Resume.pdf" target="_blank">Download</a></p>
+	    </div>
+	    <div class="container-desc-col-2">
+	      <p>My Github and source codes of this homepage <a href="https://github.com/noalac/ResumeHomepage" target="_blank">Jump</a></p>
+	    </div>
+	    <div class="container-desc-col-2">
+	      <p>Missouri S&T EMC Laboratiory <a href="https://emclab.mst.edu" target="_blank">Visit</a></p>
+	    </div>
+	    <div class="container-desc-col-2">
+	      <p>Missouri University of Science and Technology <a href="https://www.mst.edu" target="_blank">Visit</a></p>
+	    </div>
+          </div>
+	</div>
+      </div>
+    </script>
+
+    <!-- research tab -->
+    <script id="research-content" type="text/x-content">
+      <div class="container-outside">
+        <div class="container-block">
+          <h1>Publications</h1>
+          <div class="container-description">
+            <ul>
+	      <li>Guangyao Shen, Sen Yang, <b>Jingdong Sun</b>, Shuai Xu, David J. Pommerenke, and Victor V. Khilkevich. "Maximum Radiated Emissions Evaluation for the Heatsink/IC Structure Using the Measured Near Electrical Field." IEEE Transactions on Electromagnetic Compatibility 59, no. 5 (2017): 1408-1414</li>
+	      <p>[ <a href="./doc/Maximum_Radiation_Heatsink_IC_2017.pdf" target="_blank">Download</a> ]</p>
+	      <li>Jonghyun Cho, <b>Jingdong Sun</b>, Heegon Kim, Jun Fan, Yanling Lu, Siming Pan. "Coil design for 100 KHz and 6.78 MHz WPT system: Litz and solid wires and winding methods." In Electromagnetic Compatibility & Signal/Power Integrity, 2017 IEEE International Symposium on, pp. 803-806.</li>
+	      <p>[ <a href="./doc/Coil_Design_WPT_Litz_Solid_2017.pdf" target="_blank">Download</a> ]</p>
+	      <li>Chen Tian, <b>Jingdong Sun</b>, Weimin Wu, Yan Luo. "Optimal bandwidth allocation for hybrid Video-on-Demand streaming with a distributed max flow algorithm." Computer Networks 91 (2015): 483-494.</li>
+	      <p>[ <a href="./doc/Optimal_Allocation_VoD_Max_Flow_2015.pdf" target="_blank">Download</a> ]</p>
+	      <li>Junhua Yan, Chen Tian, <b>Jingdong Sun</b>, and Hanzi Mao. "Improve distributed client lifecycle control in shadowstream." International Journal of Web Services Research (IJWSR) 11, no. 4 (2014): 62-78.</li>
+	      <p>[ <a>Download</a> ]</p>
+	      <li>Hanzi Mao, Chen Tian, <b>Jingdong Sun</b>, Junhua Yan, Weimin Wu, and Benxiong Huang. "Shadow VoD: performance evaluation as a capability in production P2P-CDN hybrid VoD networks." In 2014 IEEE 11th Intl Conf on Ubiquitous Intelligence and Computing, and IEEE 11th Intl Conf on Autonomic and Trusted Computing, and IEEE 14th Intl Conf on Scalable Computing and Communications and Its Associated Workshops (UTC-ATC-ScalCom), pp. 771-776. IEEE, 2014.</li>
+	      <p>[ <a href="./doc/Shadow_VoD_P2P_CDN_Hybrid_2014.pdf" target="_blank">Download</a> ]</p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-block">
+          <h1>Conference Presentations</h1>
+          <div class="container-description">
+            <ul>
+	      <li>Talk. "Study and Simulation of HPM Effects on Semiconductor Device using Monte Carlo Method". Nov. 2016. Center for Electromagnetic Compatibility (CEMC) IAB Meeting.</li>
+	      <p>[ <a>Download</a> ]</p>
+	      <li>Poster. "Designing a 40GHz Automated Channel Emulator Based on MEMS Switch". Nov. 2014. Center for Electromagnetic Compatibility (CEMC) IAB Meeting.</li>
+	      <p>[ <a>Download</a> ]</p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-block">
+          <h1>Mathematical Modeling</h1>
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./img/math-model-solar-house.jpg">
+            </span>
+            <div id="research-text" class="container-text">
+              <div>
+	        <h3>Optimal Design for Solar House</h3>
+		<p><b>Objectives:</b><br> A mathematical model aims to solve the problem in balancing the profit and usage of solar energy.</p>
+		<p><b>Keywords:</b><br> Multi-objective programming, BL layout strategy, Packing problem, Best tilt angle</p> 
+		<p><b>Members:</b><br> Yanyu Yang, Undergraduate, School of Mathematics and Statistics, HUST<br>Wei Li,  Undergraduate, School of Mathematics and Statistics, HUST</p>
+		<p><b>Awards:</b><br> National Prize of CUMCM, China<br>CUMCM - Contemporary Undergraduate Mathematical Contest in Modeling</p>
+              </div>
+	      <div>
+	      <p>[ <a>More Information</a> ]</p>
+	      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <!-- projects tab -->
+    <script id="projects-content" type="text/x-content">
+      <div class="container-outside">
+        <div class="container-block">
+          <h1>ConvenientPower Systems (Chengdu, China)</h1>
+          <div class="container-description">
+            <ul>
+	      <li><b>CPS Wireless Charging Case for Meizu POP TWS Earphones</b></li>
+	      <p>Project & Technical Lead<br>World's first earphones product certified by WPC Qi standard. We developed the minimum wireless power receiver solution with the most compact magnetic coil design for tiny form-factor device.</p>
+	      <li><b>CPS Wireless Charging Function Integration for Gionee M7P Phone</b></li>
+	      <p>Project & Technical Lead<br>In-depth integration of wireless charging function on mechanical structure, hardware, driver and manufacturing test setup. We launched the first 10W fast wireless charging phone in China.</p>	    
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-block">
+          <h1>H3C Technologies Co., Ltd. (Wuhan, China)</h1>
+          <div class="container-description">
+            <ul>
+	      <li><b>H3C PPPoE Server Development Project</b></li>
+	      <p>Technical Lead<br>Implement the PPP protocol over the local Ethernet on the H3C Comware V7 distributed platform, including kernel architecture and user space application design.</p>
+	      <li><b>H3C Network Quality Analyzer Development Project</b></li>
+	      <p>Core Member<br>Using probes and traces to collect statistical and historical information for the routers connected to the Internet, and analyze the network quality based on multiple network protocols.</p>	    
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="container-block">
+          <h1>Research Projects (Missouri S&T/HUST)</h1>
+          <div class="container-description">
+            <ul>
+	      <li><b>Simulation of HPM / ESD Effects on Semiconductor Device</b></li>
+	      <p>Analyzed the device physics of failures caused by HPM / ESD injections.<br>Predicted the upset events in a particle-level perspective based on Monte Carlo method.</p>	    
+	      <li><b>Automated Channel Emulator Based on MEMS Switch</b></li>
+	      <p>Designed multiple high-frequency transmission line channels with different loss levels.<br>Integrated MEMS switch for channel selection by an embedded system running Python.</p>	   
+	      <li><b>Wireless Smoke Detection Based on Structure Similarity of Video</b></li>
+	      <p>Designed the smoke detection algorithm using structure similarity of video frames.<br>Completed the hardware and software of the WiFi-UART module to transmit smoke alarm.</p>	
+	      <li><b>Optimal Bandwidth Allocation Algorithm for VoD Streaming</b></li>
+	      <p>Developed an optimal bandwidth allocation topology for hybrid VoD streaming.<br>Novel <i>Demand Driven Max-Flow</i> formulation and distributed <i>Free-for-All Push-Lift</i> algorithm.</p>
+	      <li><b>Huawei Heat Sink / IC Field Transformation</b></li>
+	      <p>Constructed an equivalent field source by the near-field scanning technique.<br>Developed and validated a far-field transformation procedure for the heat sink / IC structure.</p>
+	      <li><b>Open-Source Mirror Site in Central China</b></li>
+	      <p>The first and largest open-source mirror site in Central China.<br>I completed the rsync synchronizing script (bash), the status updating script (Perl), and the front-end web page (HTML/PHP/Javascript).</p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-block">
+          <h1>Open-Source Projects (Have Fun)</h1>
+          <div class="container-description">
+            <!-- content of open source projects -->
+            <div class="opensource-projects">
+              <h3>Rage Adventure Web Game</h3>
+              <div class="opensource-screenshots">
+                <img src="./img/rage-adventure.jpg">
+              </div>
+              <p>A Processing.js based game engine demo.</p>
+            </div>
+            <div class="opensource-projects">
+              <h3>File Search Engine</h3>
+              <div class="opensource-screenshots">
+                <img src="./img/search-engine.jpg">
+              </div>
+              <p>Perl implementation of local file-system searching engine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <!-- about tab -->
+    <script id="about-content" type="text/x-content">
+      <div class="container-outside">
+        <div class="container-block">
+          <h1>About me</h1>
+          <div class="container-description">
+            <span id="about-me-photo">
+              <img src="./img/about-me.jpg">
+            </span>
+            <div id="about-me-text" class="container-text">
+              <div>
+		<p>Jingdong Sun is a Ph.D. candidate and obtained his M.S. degree in Electrical and Computer Enigneering at <a href="https://www.mst.edu" target="_blank">Missouri University of Science and Technology</a>, Rolla. He is also a graduate research assistance in the <a href="https://emclab.mst.edu" target="_blank">EMC Laboratory</a> at Missouri S&T. Prior to joining EMC Lab, Jingdong received his B.S. (Honor Program) from the Electronics and Information Engineering Department at <a href="https://www.hust.edu.cn" target="_blank">Huazhong University of Science and Technology</a>, China in 2014. </p>
+              </div>
+	      <div>
+	      <p>[ <a href="./doc/JingdongSun_Resume.pdf" target="_blank">Download Resume</a> ]</p>
+	      </div>
+              <h3>Skills</h3>
+              <div>
+                <p><b>Hardware:</b> schematic, layout, embedded system, ARM, FPGA, Zynq, Galileo</p>
+                <p><b>Software:</b> C/C++, Perl, Python, Matlab, HTML/CSS, PHP, Javascript, TCL/TK</p>
+                <p><b>Measurement:</b> Oscilloscope, VNA, SA, TDR, near-field scanning, micro-probing</p>
+                <p><b>Simulation:</b> RF full-wave (HFSS, CST, EMC Studio), circuit (ADS, HSPICE)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-block">
+          <h1>Honors and Awards</h1>
+          <div class="container-description-reverse">
+            <span>
+              <img src="./img/mst-logo.png">
+            </span>
+            <div>
+              <h3><a href="http://emclab.mst.edu/" target="_blank">EMC Lab, Missouri S&T</a></h3>
+              <ul>
+                <li>Best Student EMC Hardware Design Award</I>, 2015</li>
+		First Author, granted by IEEE Electromagnetic Compatibility Society
+                <li>Exceptional Performance in International EM Proficiency Test, 2014</li>
+		Executed by National Taiwan University & TEMIAC <br>
+		Top 4% among 265 exam takers from Japan, HK, Korea, Taiwan, and US.
+                <li>Graduate Research Assistant Scholarship, 2014</li>
+                Full research scholarship granted by EMC Laboratory, Missouri S&T
+              </ul>
+            </div>
+          </div>
+          <div class="container-description-reverse">
+            <span>
+              <img src="./img/eiac-logo.jpg">
+            </span>
+            <div>
+              <h3><a href="http://qiming.hust.edu.cn/" target="_blank">Advanced Class (Honor Program), HUST</a></h3>
+              <ul>
+                <li>National Prize in Mathematical Contest CUMCM, 2012</li>
+		Contemporary Undergraduate Methematical Contest in Modeling <br>
+		Top 5% among all the competitors in China, Singapore, and US.
+                <li>National Computer Rank Examination Certificate (Grade 4, Network Engineer), 2011</li>
+                <li>National Utility Model Patent, 2009</li>
+                <li>Tennis of Hubei University Sports Competition: 6th in men's single / 3rd in men's group</li>
+                <li>Occupational Qualification Certificate of Tennis (Fifth Level)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-description-reverse">
+            <span>
+              <img src="./img/dian-logo.png">
+            </span>
+            <div>
+              <h3><a href="http://www.dian.org.cn" target="_blank">Dian Group, HUST</a></h3>
+              <ul>
+                <li>Most Valuable Member of the Year, 2012 (one person each year)</li>
+                <li>Winning the TechStar Honor twice (in 08/2012 and 12/2012 respectively)</li>
+              </ul>
+            </div>
+          </div>
+	  <div style="height:20px;"><div> <!-- only to add a little space at bottom -->
+        </div>
+      </div>
+    </script>
+    <!-- contact tab -->
+    <script id="contact-content" type="text/x-content">
+      <div class="container-outside">
+        <div class="container-block">
+          <h1>Contact</h1>
+          <div class="container-description">
+            <span id="contact-photo">
+              <img src="./img/contact.jpg">
+            </span>
+            <div class="container-text">
+              <h3>Address</h3>
+              <div>
+                <p>4000 Enterprise Dr</p>
+                <p>EMC Lab, Missouri S&T</p>
+                <p>Rolla, MO, 65401</p>
+              </div>
+              <h3>Connection</h3>
+              <ul id="contact">
+                <li>
+                  <a id="mail" href="#" target="_blank"><span id="mail-address"></span></a>
+                </li>
+                <li>
+                  <a id="linkedin" href="https://www.linkedin.com/in/sunjd" target="_blank">
+		    LinkedIn @sunjd
+		  </a>
+                </li>
+                <li>
+                  <a id="twitter" href="https://twitter.com/JingdongSun" target="_blank">
+                    Twitter @JingdongSun
+                  </a>
+                </li>
+              </ul>
+              <div id="qr-code">
+                <img src="./img/qrcode.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+	<div class="container-block">
+	  <h1>Map</h1>
+	  <div class="container-description">
+	    <div id="my-map" style="width:100%;height:400px;"></div>
+            <script>
+              /* we use mapbox to provide map information */
+              var mymap = L.map('my-map').setView([37.981548, -91.722785], 15);
+	      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
+                maxZoom: 18,
+                id: 'mapbox.streets',
+                accessToken: 'pk.eyJ1Ijoibm9hbGFjIiwiYSI6ImNqbTc1aWwwaTA3aGIzdXF4ejg1djAwaW8ifQ.v_ppCeRFx1XeG9gYf2azTA'
+	      }).addTo(mymap);
+              var marker = L.marker([37.981548, -91.722785]).addTo(mymap);
+              /* important, rerender the map window to make sure all tiles are initialized*/
+              window.dispatchEvent(new Event('resize'));
+	      marker.bindPopup("<b>EMC Lab, Missouri S&T</b><br>4000 Enterprise Dr, Rolla, MO");
+            </script>
+	  </div>
+      </div>
+    </script>
+
+    
+    <!-- animation between tabs on navigation -->
+    <script async type="text/javascript" src="./js/application.js"></script>
+    <!-- go back to top function -->
+    <script type="text/javascript" src="./js/backtop.js"></script>
+    <!-- change gallery photo and description when click on arrows -->
+    <script type="text/javascript">
+      var gallery_photo_titles = new Array(
+        "Welcome to My Homepage",
+        "World's First Qi Certified Earphones",
+        "Best Student Hardware Design Award");
+      var gallery_photo_descriptions = new Array(
+        "Here is a collection of my work, including the academical research and projects",
+        "We developed and integrated wireless charging solution for Meizu POP TWS Earpods",
+        "Award granted by IEEE EMC Society in 2015 IEEE EMC Symposium, Santa Clara, CA");
+      /* set up a timer to change gallery photo in time */
+      var timer = window.setInterval("changePhotoRight()", 8000);
+    </script>
+    <!-- extension function -->
+    <script type="text/javascript" src="./js/extension.js"></script>
+
+    <!-- footer shows my motto -->
+    <div id="bottom-banner" class="banner">
+      <div id="motto" class="wrapper">
+        <p>This is no such thing as FAILURE</p>
+        <p>Just the temporary absence of SUCCESS</p>
+      </div>
+    </div>
+  </body>
+
+  <!--[if lte IE 8]>
+  <div id="warning">
+    <p class="wrapper">*Detecting the current browser version is Microsoft Internet Explorer 8 (IE8) or below (IE7 IE6 etc.).</p>
+    <p class="wrapper">**It is highly recommended to use Chrome / Firefox / IE9 to gain the best animation experience of my portfolio website.</p>
+  </div>
+  <![endif]-->
+</html>
