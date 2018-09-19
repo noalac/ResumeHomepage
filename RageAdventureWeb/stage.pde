@@ -70,7 +70,7 @@ class RageLayer extends LevelLayer {
     // ground boundary
     addBoundary(new Boundary(0, 0, 0, height));
     addBoundary(new Boundary(width, height, width, 0));
-    showBoundaries = true;
+    showBoundaries = false;
 
     // add ground with two holes in the middle
     addGround(-48, height-48, 480, height);
