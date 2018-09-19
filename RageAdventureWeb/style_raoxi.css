@@ -26,9 +26,9 @@ body {
 headers h1{
 	line-height:2;
         font-family: 'Tangerine', serif;
-        font-size: 48px;
+        font-size: 36px;
         text-shadow: 4px 4px 4px #aaa;
-
+	margin-top:20px;
 }
 headers h4{
 	font-weight:normal;
