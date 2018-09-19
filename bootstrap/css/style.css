@@ -261,6 +261,10 @@ body {
     transition:color .5s;
 }
 
+.container-description li {
+    margin-bottom:10px;
+}
+
 .container-desc-col-2 {
     display:inline-block;
     width:49%;
@@ -304,6 +308,7 @@ body {
     margin-bottom:0px;
     padding-left:15px;
 }
+
 .container-text {
     position:relative;
     /* float:right; */
