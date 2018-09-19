@@ -47,4 +47,5 @@ canvas {
         background-image: url("ajax-loader.gif");
         background-position: center center;
         background-repeat: no-repeat;
+	margin:10px;
 }

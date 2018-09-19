@@ -10,8 +10,8 @@ void addScreen(String name, Screen screen) {
 
 /* @pjs pauseOnBlur="true";
         font="fonts/acmesa.ttf";
-        preload=" graphics/mute.gif,
-                  graphics/unmute.gif,
+        preload=" graphics/background/mute.gif,
+                  graphics/background/unmute.gif,
                   graphics/hero/standing-hero.gif,
                   graphics/hero/walking-hero.gif,
                   graphics/hero/jumping-hero.gif,
