@@ -10,6 +10,9 @@ handlers:
 - url: /bootstrap
   static_dir: bootstrap
 
+- url: /RageAdventureWeb
+  static_dir: RageAdventureWeb
+
 - url: /.*
   script: index.html
 
