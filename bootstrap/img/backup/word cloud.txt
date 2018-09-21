@@ -1,0 +1,32 @@
+3 EMC
+3 SIPI
+3 WPT
+2 Model
+2 C++
+2 Perl
+2 php
+2 computer
+2 program
+2 network
+2 algorithm
+2 data
+2 device
+2 VoD
+1 simulation
+1 software
+1 HTML
+1 CSS
+1 Javascript
+1 open-source
+1 semiconductor
+1 charging
+1 communication
+1 Python
+1 computation
+1 measurement
+1 LaTex
+1 antenna 
+1 computer
+
+
+
