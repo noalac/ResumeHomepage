@@ -331,6 +331,9 @@ body {
 #qr-code {
     float:right;
 }
+#qr-code img {
+    width:180px;
+}
 #about-me-photo {
     width:300px;
     height:300px;
