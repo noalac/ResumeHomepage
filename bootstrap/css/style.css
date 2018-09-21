@@ -23,11 +23,11 @@ body {
 }
 
 #top-banner {
-	background:-moz-linear-gradient(top, #010101 0%, #232323 100%);
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #010101), color-stop(100%, #232323));
-	background:-webkit-linear-gradient(top, #010101 0%, #232323 100%);
-	background:-o-linear-gradient(top, #010101 0%, #232323 100%);
-	background:-ms-linear-gradient(top, #010101 0%, #232323 100%);
+	background:-moz-linear-gradient(top, #010101 0%, #343434 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #010101), color-stop(100%, #343434));
+	background:-webkit-linear-gradient(top, #010101 0%, #343434 100%);
+	background:-o-linear-gradient(top, #010101 0%, #343434 100%);
+	background:-ms-linear-gradient(top, #010101 0%, #343434 100%);
 	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 	box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
@@ -36,11 +36,11 @@ body {
     z-index:998;
 }
 #bottom-banner {
-	background:-moz-linear-gradient(top, #222 0%, #000 100%);
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #222), color-stop(100%, #000));
-	background:-webkit-linear-gradient(top, #222 0%, #000 100%);
-	background:-o-linear-gradient(top, #222 0%, #000 100%);
-	background:-ms-linear-gradient(top, #222 0%, #000 100%);
+	background:-moz-linear-gradient(top, #343434 0%, #010101 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #343434), color-stop(100%, #010101));
+	background:-webkit-linear-gradient(top, #343434 0%, #010101 100%);
+	background:-o-linear-gradient(top, #343434 0%, #010101 100%);
+	background:-ms-linear-gradient(top, #343434 0%, #010101 100%);
 	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 	box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
@@ -99,7 +99,7 @@ body {
 #nav li a {
     display:inline-block;
     outline:none;
-    color:#ccc;
+    color:#CCC;
     text-decoration:none;
 
     -webkit-transition:color .5s;
@@ -434,8 +434,8 @@ body {
 
 .opensource-projects {
     display:inline-block;
-    width:400px;
-    padding-left:25px;
+    width:45%;
+    margin-left:20px;
 }
 
 .opensource-projects h3 {
@@ -446,7 +446,7 @@ body {
     margin-top:10px;
     width:330px;
     height:270px;
-    background-color:#444;
+    background-color:#BBB;
     margin-bottom:10px;
 }
 .opensource-screenshots img {
