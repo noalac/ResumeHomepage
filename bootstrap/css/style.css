@@ -265,9 +265,10 @@ body {
     margin-bottom:10px;
 }
 
-.container-desc-col-2 {
+.container-desc-col-3 {
     display:inline-block;
-    width:49%;
+    width:32%;
+    text-align:center;
 }
 
 .container-description-reverse {
