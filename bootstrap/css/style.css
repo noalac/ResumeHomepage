@@ -271,6 +271,12 @@ body {
     text-align:center;
 }
 
+.container-desc-col-4 {
+    display:inline-block;
+    width:24%;
+    text-align:center;
+}
+
 .container-description-reverse {
     /* position:relative; */
     margin-top:80px;
