@@ -461,3 +461,22 @@ body {
     margin-left:15px;
 }
 
+
+#quick-links a img {
+    width:180px;
+    height:120px;
+    box-shadow:none;
+    -webkit-transition:box-shadow .5s;
+    -moz-transition:box-shadow .5s;
+    -o-transition:box-shadow .5s;
+    transition:box-shadow .5s;    
+}
+
+#quick-links a img:hover {
+    box-shadow:0 0 10px #5C88DA;
+    -webkit-transition:box-shadow .5s;
+    -moz-transition:box-shadow .5s;
+    -o-transition:box-shadow .5s;
+    transition:box-shadow .5s;
+}
+
