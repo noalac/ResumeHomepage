@@ -33,7 +33,7 @@ body {
 	box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 
     position:fixed;
-    z-index:998;
+    z-index:96;
 }
 #bottom-banner {
 	background:-moz-linear-gradient(top, #343434 0%, #010101 100%);
@@ -47,7 +47,7 @@ body {
 }
 #site-title {
     position:fixed;
-    z-index:999;
+    z-index:97;
     top:0px;
 }
 #main-body {
@@ -69,19 +69,34 @@ body {
     font-family:'Verdana';
     font-size:28px;
     color:#fff;
+    z-index:99;
 }
 
-#subname {
+#subname a {
     font-family:'Verdana';
     font-size:22px;
     color:#5C88DA;
+    text-decoration:none;
+    -webkit-transition:color .5s;
+    -moz-transition:color .5s;
+    -o-transition:color .5s;
+    transition:color .5s;    
+}
+
+#subname a:hover {
+    color:rgb(0,169,255);
+    -webkit-transition:color .5s;
+    -moz-transition:color .5s;
+    -o-transition:color .5s;
+    transition:color .5s;    
 }
 
 #access {
-    top: 60px;
-    width: 940px;
-    min-height: 25px;
-    position: absolute;
+    top:60px;
+    width:940px;
+    min-height:25px;
+    position:absolute;
+    z-index:98;
 }
 
 #nav {
