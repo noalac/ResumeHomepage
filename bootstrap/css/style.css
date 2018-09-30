@@ -23,27 +23,27 @@ body {
 }
 
 #top-banner {
-	background:-moz-linear-gradient(top, #010101 0%, #343434 100%);
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #010101), color-stop(100%, #343434));
-	background:-webkit-linear-gradient(top, #010101 0%, #343434 100%);
-	background:-o-linear-gradient(top, #010101 0%, #343434 100%);
-	background:-ms-linear-gradient(top, #010101 0%, #343434 100%);
-	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
-	box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
+    background:-moz-linear-gradient(top, #010101 0%, #454545 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #010101), color-stop(100%, #454545));
+    background:-webkit-linear-gradient(top, #010101 0%, #454545 100%);
+    background:-o-linear-gradient(top, #010101 0%, #454545 100%);
+    background:-ms-linear-gradient(top, #010101 0%, #454545 100%);
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 
     position:fixed;
     z-index:96;
 }
 #bottom-banner {
-	background:-moz-linear-gradient(top, #343434 0%, #010101 100%);
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #343434), color-stop(100%, #010101));
-	background:-webkit-linear-gradient(top, #343434 0%, #010101 100%);
-	background:-o-linear-gradient(top, #343434 0%, #010101 100%);
-	background:-ms-linear-gradient(top, #343434 0%, #010101 100%);
-	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
-	box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
+    background:-moz-linear-gradient(top, #454545 0%, #010101 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #454545), color-stop(100%, #010101));
+    background:-webkit-linear-gradient(top, #454545 0%, #010101 100%);
+    background:-o-linear-gradient(top, #454545 0%, #010101 100%);
+    background:-ms-linear-gradient(top, #454545 0%, #010101 100%);
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 }
 #site-title {
     position:fixed;
