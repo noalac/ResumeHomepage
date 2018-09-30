@@ -1,7 +1,7 @@
 Resume Homepage on Google Cloud
 ================================
 
-My online homepage deplyed on Google Cloud App Engine
+My online homepage deployed on Google Cloud App Engine
 
 To see how it works, please visit https://sun-jd.appspot.com
 
