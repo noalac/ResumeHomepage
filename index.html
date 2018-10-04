@@ -28,9 +28,9 @@
         <div id="access">
           <ul id="nav">
             <li><a id="link-contact" href="#contact" onclick="changeNavState(id)">CONTACT</a></li>
-            <li><a id="link-about" href="#about" onclick="changeNavState(id)">ABOUT</a></li>
             <li><a id="link-projects" href="#projects" onclick="changeNavState(id)">PROJECTS</a></li>
             <li><a id="link-research" href="#research" onclick="changeNavState(id)">RESEARCH</a></li>
+            <li><a id="link-about" href="#about" onclick="changeNavState(id)">ABOUT</a></li>
             <li><a id="link-home" href="#home" onclick="changeNavState(id)">HOME</a></li>
           </ul>
         </div>
@@ -324,6 +324,7 @@
         </div>
       </div>
     </script>
+
     <!-- contact tab -->
     <script id="contact-content" type="text/x-content">
       <div class="container-outside">
@@ -360,11 +361,10 @@
             </div>
           </div>
         </div>
-
-	    <div class="container-block">
-	      <h1>Map</h1>
-	      <div class="container-description">
-	        <div id="my-map" style="width:100%;height:400px;"></div>
+        <div class="container-block">
+          <h1>Map</h1>
+          <div class="container-description">
+            <div id="my-map" style="width:100%;height:400px;"></div>
             <script>
               /* we use mapbox to provide map information */
               var mymap = L.map('my-map').setView([37.981548, -91.722785], 15);
@@ -375,22 +375,23 @@
                 accessToken: 'pk.eyJ1Ijoibm9hbGFjIiwiYSI6ImNqbTc1aWwwaTA3aGIzdXF4ejg1djAwaW8ifQ.v_ppCeRFx1XeG9gYf2azTA'
 	      }).addTo(mymap);
               var marker = L.marker([37.981548, -91.722785]).addTo(mymap);
-              /* important, rerender the map window to make sure all tiles are initialized*/
-              window.dispatchEvent(new Event('resize'));
+              /* important, rerender the map window to make sure all tiles are initialized */
+              var resizeEvent = window.document.createEvent('UIEvents'); 
+	      resizeEvent.initUIEvent('resize', true, false, window, 0); 
+              window.dispatchEvent(resizeEvent);
 	      marker.bindPopup("<b>EMC Lab, Missouri S&T</b><br>4000 Enterprise Dr, Rolla, MO");
             </script>
-	      </div>
+          </div>
         </div>
       </div>
     </script>
-
     
     <!-- animation between tabs on navigation -->
-    <script async type="text/javascript" src="./bootstrap/js/application.js"></script>
+    <script async src="./bootstrap/js/application.js"></script>
     <!-- go back to top function -->
-    <script type="text/javascript" src="./bootstrap/js/backtop.js"></script>
+    <script src="./bootstrap/js/backtop.js"></script>
     <!-- change gallery photo and description when click on arrows -->
-    <script type="text/javascript">
+    <script>
       var gallery_photo_titles = new Array(
         "Welcome to My Homepage",
         "World's First Qi Certified Earphones",
@@ -403,7 +404,7 @@
       var timer = window.setInterval("changePhotoRight()", 8000);
     </script>
     <!-- extension function -->
-    <script type="text/javascript" src="./bootstrap/js/extension.js"></script>
+    <script src="./bootstrap/js/extension.js"></script>
 
     <!-- footer shows my motto -->
     <div id="bottom-banner" class="banner">
