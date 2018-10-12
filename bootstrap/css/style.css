@@ -364,6 +364,9 @@ body {
 #about-me-text {
     width:520px;
 }
+#about-me-text p {
+	text-align:justify;
+}
 #contact {
     list-style-type:none;
     padding-left:0px;
