@@ -7,6 +7,10 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /google094ff15990fcfd92\.html
+  static_files: google094ff15990fcfd92.html
+  upload: google094ff15990fcfd92\.html
+
 - url: /bootstrap
   static_dir: bootstrap
 
