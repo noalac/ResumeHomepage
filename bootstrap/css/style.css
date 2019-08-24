@@ -266,7 +266,7 @@ body {
 
 .container-description a {
     /* font-weight:bold; */
-    color:#0057E7;
+    color:#5C88DA;
     text-decoration:none;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
@@ -275,7 +275,7 @@ body {
 }
 .container-description a:hover {
     /* font-weight:bold; */
-    color:#5C88DA;
+    color:#0057E7;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
     -o-transition:color .5s;
@@ -318,7 +318,7 @@ body {
 }
 
 .container-description-reverse a {
-    color:#0057E7;
+    color:#5C88DA;
     text-decoration:none;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
@@ -326,7 +326,7 @@ body {
     transition:color .5s;
 }
 .container-description-reverse a:hover {
-    color:#5C88DA;
+    color:#0057E7;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
     -o-transition:color .5s;
@@ -497,3 +497,6 @@ body {
     height:120px;
 }
 
+#my-map {
+    z-index:3;
+}
