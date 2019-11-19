@@ -53,6 +53,9 @@
           <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
             <img src="./bootstrap/img/gallery-photo3.jpg">
           </span>
+          <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
+            <img src="./bootstrap/img/gallery-photo4.jpg">
+          </span>
           <!-- two arrows switching photos -->
           <span id="arrows-left" onclick="window.clearInterval(timer); changePhotoLeft();timer = window.setInterval(changePhotoLeft,4000);">
             <img src="./bootstrap/img/arrows-left.png">
@@ -440,11 +443,13 @@
       var gallery_photo_titles = new Array(
         "Welcome to My Homepage",
         "World's First Qi Certified Earphones",
-        "Best Student Hardware Design Award");
+        "Best Student Hardware Design Award",
+        "Presentation in CEMC IAB Meeting");
       var gallery_photo_descriptions = new Array(
         "Here is a collection of my work, including the research and projects",
-        "Developed and integrated wireless charging solution for Meizu POP TWS Earpods",
-        "Granted by IEEE EMC Society in 2015 IEEE EMC Symposium, Santa Clara, CA");
+        "Integrated the wireless charging solution for Meizu POP TWS Earpods",
+        "Granted by IEEE EMC Society in 2015 IEEE EMC Symposium, Santa Clara, CA",
+        "Introducing the modeling method for power distribution network, Hawaii");
       /* set up a timer to change gallery photo in time */
       var timer = window.setInterval("changePhotoRight()", 8000);
     </script>
